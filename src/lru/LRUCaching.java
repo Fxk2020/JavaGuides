@@ -4,14 +4,15 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class LRUCaching extends LinkedHashMap<Integer, Integer> {
-    private int cap;
+    private final int cap;
 
     public LRUCaching(int cap){
+        super(cap, 0.75f, true);
         this.cap = cap;
     }
 
     public synchronized int get(int key){
-        return super.get(key);
+        return getOrDefault(key, -1);
     }
 
     public synchronized void put(int key, int value){
