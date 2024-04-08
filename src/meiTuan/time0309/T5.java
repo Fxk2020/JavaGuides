@@ -41,7 +41,7 @@ public class T5 {
             parent[i] = i;
         }
 
-        for
+
 
 
     }
