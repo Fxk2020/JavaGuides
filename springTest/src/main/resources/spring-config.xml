@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="myBeanPostProcessor" class="com.example.springtest.MyBeanPostProcessor" />
+    <bean name="personBean" class="com.example.springtest.PersonBean"
+          init-method="init" destroy-method="destroyMethod"
+          scope="prototype">
+        <property name="no" value= "80669865"/>
+        <property name="name" value="张铁钢" />
+    </bean>
+
+    <bean name="rectangle" class="com.example.springtest.Rectangle">
+        <property name="length" value="15"/>
+        <property name="width" value="20"/>
+    </bean>
+</beans>
