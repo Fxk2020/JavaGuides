@@ -54,6 +54,13 @@
             <artifactId>canal.protocol</artifactId>
             <version>1.1.7</version>
         </dependency>
+
+<!--    ASM框架    -->
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>8.0</version>
+        </dependency>
     </dependencies>
 
     <build>
